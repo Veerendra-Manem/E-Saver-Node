@@ -150,4 +150,4 @@ mongoose.connect('mongodb://test:test123@ds033487.mlab.com:33487/esaver', {useNe
     )
 
 app.use('/auth', auth.router)
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
